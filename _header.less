@@ -1,0 +1,73 @@
+.header {
+    font-family: @font-primary;
+    color: @header-sm;
+    font-size: 0.875em;
+}
+
+.top {
+    background: @nav-bg;
+}
+
+.top-nav {
+    
+    
+    padding-top: 10px;
+
+    &__item {
+        display: flex;
+    }
+
+    &__items {
+
+        &:not(:first-child) {
+
+            padding-left: 1.875em;
+        }
+
+        &-place:before {
+
+            content: url(images/icons/ui/point.svg);
+            margin-right: 2px;
+            //display: inline-block;
+            vertical-align: middle;
+
+        }
+
+        &-arrow:after {
+
+            content: url(images/icons/ui/arrow_bt.svg
+            );
+            margin-left: 2px;
+            display: inline-block;
+            vertical-align: middle;
+
+        }
+
+        &:hover {
+            color: @link-hover;
+        }
+    }
+}
+
+
+.second {
+    
+
+background: @nav;
+border-bottom: @mark-border;
+
+}
+
+.navigation {
+
+    &__logo {
+        margin-right: 15px;
+    }
+
+    &__txt {
+        margin-top: 20px;
+    }
+
+    
+
+}

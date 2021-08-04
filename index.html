@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>less</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="top">
+      <nav class="top-nav container pt-md-2">
+        <ul class="top-nav__item pl-0 col-md-9">
+          <li class="top-nav__items">Отправить отзыв</li>
+          <li class="top-nav__items">Доставка заказов в ЕАЭС</li>
+          <li class="top-nav__items top-nav__items-arrow">Еще</li>
+        </ul>
+        <ul class="top-nav__item pl-0 col-md-3">
+          <li class="top-nav__items top-nav__items-place">Екатеринбург</li>
+          <li class="top-nav__items">География</li>
+          <li class="top-nav__items">Личный кабинет</li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="second">
+      <nav class="navbar navigation container">
+
+        <div class="navbar-header1 nav navbar-nav">
+
+
+          <div class="navigation__logo pull-left">
+            <a href="#"><img src="images/company/logo_e-kit.svg" alt="logo_e-kit"></a>
+          </div>
+          <a class="navigation__txt" href="#">логистика для
+            интернет-магазинов</a>
+          <div class=navigation__phone><a href="tel:8800234-73-77">8 800 234-73-77</a></div>
+        </div>
+        <ul class="navigation__items nav navbar-nav">
+
+          <li class="navigation__item"><a href="#">Отследить/Оплатить</a></li>
+          <li class="navigation__item"><a href="#">Документы</a></li>
+          <li class="navigation__item"><a href="#">Калькулятор</a></li>
+          <li class="navigation__item"><a href="#">Филиалы</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <div class="action-btn"><a class="action-btn__link">Заключить договор</a>
+        </ul>
+
+      </nav>
+    </div>
+
+
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <section class="delivery">
+        <div class="main-container">
+          <div class="row py-5">
+            <div class="col-md-6 py-5">
+              <h1 class="delivery__title">Доставка с наложенным платежом</h1>
+              <p class="delivery__info">Перечислим денежные средства на расчетный счет вашего интернет-магазина в срок
+              </p>
+              <ul class="row">
+                <li class="col-md-4">
+                  <h2 class="delivery__record">4 000 т.</h2>
+                  <p class="delivery__info">груза ежедневно</p>
+                </li>
+                <li class="col-md-4">
+                  <h2 class="delivery__record">10 000+.</h2>
+                  <p class="delivery__info">городов доставки</p>
+                </li>
+                <li class="col-md-4">
+                  <h2 class="delivery__record">1 500 ед.</h2>
+                  <p class="delivery__info">транспорта в сутки</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <img class="pull-right" src="images/illustrations/products/place_delivery.svg" alt="доставка до места">
+            </div>
+
+          </div>
+          <div class="marketing-cards row">
+            <div class="col-md-4">
+              <div class="marketing-card marketing-card-aria marketing-card-sm">
+                <div class="d-flex">
+                  <div class="py-5 pr-3">
+                    <img class="pl-4" src="images/icons/ui/simpy_delivery.svg" alt="просто">
+                  </div>
+
+
+                  <div class="py-3">
+                    <h4 class="marketing-card__title">Просто</h4>
+                    <ul class="marketing-card__item px-0">
+                      <li class="marketing-card__items">Личный кабинет</li>
+                      <li class="marketing-card__items">Готовые модули интеграции</li>
+                      <li class="marketing-card__items">Терминалы/ПВЗ по всей РФ</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="marketing-card marketing-card-aria marketing-card-sm">
+                <div class="d-flex">
+                  <div class="py-5 pr-3">
+                    <img class="pl-4" src="images/icons/ui/cheap_delivery.svg" alt="просто">
+                  </div>
+
+
+                  <div class="py-3">
+                    <h4 class="marketing-card__title">Доступно</h4>
+                    <ul class="marketing-card__item px-0">
+                      <li class="marketing-card__items">Наложенный платеж</li>
+                      <li class="marketing-card__items">Выгодные пакеты услуг</li>
+                      <li class="marketing-card__items">Упрощенные тарифы</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4">
+              <div class="marketing-card marketing-card-aria marketing-card-sm">
+                <div class="d-flex">
+                  <div class="py-5 pr-3">
+                    <img class="pl-4" src="images/icons/ui/reliable_ delivery.svg" alt="надежно">
+                  </div>
+
+
+                  <div class="py-3">
+                    <h4 class="marketing-card__title">Надежно</h4>
+                    <ul class="marketing-card__item px-0">
+                      <li class="marketing-card__items">Сервис отслеживания</li>
+                      <li class="marketing-card__items">Система уведомлений</li>
+                      <li class="marketing-card__items">Отчеты в личном кабинете</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </section>
+
+      <section class="customers">
+        <div class="container">
+          <h2 class="customers__title text-center">
+            Комплекс услуг
+          </h2>
+          <div class="row">
+            <div class="col-md-6 pl-0 pr-1">
+              <div class="customer-card p-3">
+                <h3 class="customer-card__title">Для интернет-магазинов:</h3>
+                <p class="customer-card__info">Собственная служба доставки интернет-магазину больше
+                  не нужна!</p>
+                <ul class="customer-card__list">
+                  <li class="customer-card__info-check mr-3 d-inline">
+                    <div class="d-inline">
+                      <p class="customer-card__info text-left">Не нужно содержать штат курьеров и привлекать
+                        материальные ресурсы</p>
+                    </div>
+                  </li>
+                  <li class="customer-card__info customer-card__info-check">Не нужно содержать штат курьеров и
+                    привлекать
+                    материальные ресурсы</li>
+                  <li class="customer-card__info customer-card__info-check">Доставка по всей России, наложенный платеж,
+                    простой возврат товара или документов</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 pr-0 pl-1">
+              <div class="customer-card p-3">
+                <h3 class="customer-card__title">Для физических лиц:</h3>
+                <p class="customer-card__info customer-card__info-check">Когда нужно дешево и быстро получить заказ от
+                  интернет-
+                  магазина</p>
+                <ul class="customer-card__list">
+                  <li class="customer-card__info customer-card__info-check">Безопасная оплата при получении и
+                    отслеживание
+                    заказа онлайн</li>
+                  <li class="customer-card__info customer-card__info-check">Доставка по временным интервалам до адреса
+                    или до
+                    удобного для Вас ПВЗ
+                  </li>
+                  <li class="customer-card__info">Гарантированная безопасность отправления и
+                    платежей</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="main-container">
+          <div class="product">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="product__img"><img src="images/titles/kit_box.svg" alt="kit_box"></div>
+
+                <h3 class="product__title py-3">Цена отправления фиксированная
+                  и не зависит от расстояния</h3>
+
+                <p class="product__info">Услуга перевозки малогабаритных грузов в упаковке отправителя</p>
+                <button type="button" class="action-btn action-btn__link">Подробнее</button>
+              </div>
+              <div class="col-md-6">
+                <img class="pull-right" src="images/illustrations/products/careful_delivery.svg"
+                  alt="бережная доставка">
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="extra">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="include">
+                  <h3 class="include__title include__title-lg">В услугу KIT-Box включено:</h3>
+                  <ul class="include__items">
+
+                    <li class="include__item">
+                      <h4 class="include__title include__title-sm">Упаковка (не обязательна)</h4>
+                      <p class="include__info">Упаковка предоставляется по желанию
+                        грузоотправителя</p>
+                    </li>
+                    <li class="include__item">
+                      <h4 class="include__title include__title-sm">Перевозка</h4>
+                      <p class="include__info">Внутри города, между населенными
+                        пунктами адресно или до терминала</p>
+                    </li>
+                    <li class="include__item">
+                      <h4 class="include__title include__title-sm">Страхование</h4>
+                      <p class="include__info">Базовое страховое покрытие ваших
+                        отправлений</p>
+                    </li>
+
+
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="acc">
+                  <h3 class="acc__title">Дополнительные услуги:</h3>
+
+                  <div class="optional">
+                    <div class="acc">
+                      АККОРДЕОН
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="product product-bg">
+          <div class="main-container">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="images/illustrations/products/city_delivery.svg" alt="доставка до адреса"></div>
+
+
+              <div class="col-md-7 pt-5">
+                <h1 class="product__title product__title-max">Доставка товаров <br>
+                  до адреса покупателя</h1>
+
+                <p class="product__items py-3">Для отправлений KITBox мы разработали комфортные низкие тарифы на
+                  доставку до
+                  адреса, а также включили в стоимость услуг доставки погрузо-разгрузочные работы и подъем на этаж.</p>
+                <button type="button" class="action-btn action-btn__link">Подробнее</button>
+              </div>
+            </div>
+
+            <div class="marketing-cards row py-5">
+              <div class="col-md-4">
+                <div class="marketing-card marketing-card-aria px-1">
+                  <div class="d-flex">
+                    <div class="marketing-card__img py-5 pl-3">
+                      <img class="" src="images/icons/ui/fast_delivery.svg" alt="просто">
+                    </div>
+
+
+                    <div class="py-3">
+                      <h4 class="marketing-card__title">Быстро</h4>
+
+                      <p class="marketing-card__items">Точно в срок заберем и
+                        доставим товар до покупателя интернет-магазина</p>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="marketing-card marketing-card-aria px-1">
+                  <div class="d-flex">
+                    <div class="marketing-card__img py-5 pl-3">
+                      <img class="" src="images/icons/ui/care_delivery.svg" alt="просто">
+                    </div>
+
+
+                    <div class="py-3">
+                      <h4 class="marketing-card__title">Бережно</h4>
+
+                      <p class="marketing-card__items">Хрупкий и характерный груз маркируем информационными знаками</p>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4">
+                <div class="marketing-card marketing-card-aria px-1">
+                  <div class="d-flex">
+                    <div class="marketing-card__img py-5 pl-3">
+                      <img class="" src="images/icons/ui/safe_delivery.svg" alt="просто">
+                    </div>
+
+
+                    <div class="py-3">
+                      <h4 class="marketing-card__title">Безопасно</h4>
+
+                      <p class="marketing-card__items">Кост-код при получении в виде SMS вместо удостоверения личности +
+                        54-ФЗ</p>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="main-container">
+          <div class="product py-5">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="product__img"><img src="images/titles/delivery_tire.svg" alt="kit_box"></div>
+
+                <h3 class="product__title py-3">Стоимость доставки не зависит
+                  от веса и объема</h3>
+
+                <p class="product__info">Доставка шин и покрышек по специальной сниженной цене</p>
+                <button type="button" class="action-btn action-btn__link">Подробнее</button>
+              </div>
+              <div class="col-md-5">
+                <img class="pull-right" src="images/illustrations/products/tires_delivery.svg" alt="бережная доставка">
+              </div>
+            </div>
+
+            <hr class="line">
+            <h1 class="text-center product__title product__title-max">Покрышка - доставка шин и покрышек по специальной
+              низкой цене</h1>
+          </div>
+
+          <div class="marketing-cards row py-5">
+            <div class="col-md-4">
+              <div class="marketing-card marketing-card-aria marketing-card-lg px-1">
+                <div class="d-flex">
+                  <div class="marketing-card__img py-5 pl-3">
+                    <img class="" src="images/icons/ui/time_delivery.svg" alt="просто">
+                  </div>
+
+
+                  <div class="py-3">
+                    <h4 class="marketing-card__title">Доставка до терминала</h4>
+
+                    <p class="marketing-card__items">Перевозка груза до представительства Е-КИТ в Вашем городе</p>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="marketing-card marketing-card-aria marketing-card-lg px-1">
+                <div class="d-flex">
+                  <div class="marketing-card__img py-5 pl-3">
+                    <img class="" src="images/icons/ui/time_delivery.svg" alt="просто">
+                  </div>
+
+
+                  <div class="py-3">
+                    <h4 class="marketing-card__title">Прозрачный
+                      тариф</h4>
+
+                    <p class="marketing-card__items">Прозрачная цена без дополнительных или скрытых услуг</p>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4">
+              <div class="marketing-card marketing-card-aria marketing-card-lg px-1">
+                <div class="d-flex">
+                  <div class="marketing-card__img py-5 pl-3">
+                    <img class="" src="images/icons/ui/time_delivery.svg" alt="просто">
+                  </div>
+
+
+                  <div class="py-3">
+                    <h4 class="marketing-card__title">Не зависимо от веса
+                      и объема</h4>
+
+                    <p class="marketing-card__items">Цена фиксированная и зависит только от зоны отправления и получения
+                    </p>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+
+        <div class="product product-bg">
+          <div class="main-container py-5">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="product__img"><img src="images/titles/goods_processing.svg" alt="3pl"></div>
+
+                <h3 class="product__title">Обработка товаров для <br> транспортировки до Вашего покупателя
+                </h3>
+
+                <p class="product__info">3PL - это хранение, комплектование и доукомплектование заказов Вашими товарами,
+                  на складе Е-КИТ
+
+                </p>
+                <button type="button" class="action-btn action-btn__link">Подробнее</button>
+
+              </div>
+              <div class="col-md-5">
+                <div class="product_bg">
+                  <div class="product__img"><img src="images/illustrations/products/packaging_warehouse.svg" alt="3pl">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+    </div>
+
+    </section>
+
+    <section class="news">
+      <div class="main-container">
+        <h1 class="news__title">
+          Последние новости
+        </h1>
+
+        <h1 class="text-center news__title news__title-max">Последние новости</h1>
+
+        <div class="marketing-cards row py-5">
+          <div class="col-md-4">
+            <div class="marketing-card marketing-card-aria marketing-card-xl px-1">
+              <div class=""></div>
+              <div class="py-4 px-4">
+                <h4 class="marketing-card__title">Новые ПВЗ</h4>
+
+                <p class="marketing-card__items">Открыта доставка заказов с наложенным платежом до 15 кг включительно
+                  в 939 ПВЗ "5Post" в 188 населенных пунктах Свердловской,Тюменской...</p>
+
+                <div class="marketing-card-ill py-4">
+                  <img class="" src="images/illustrations/news/points_issue.svg" alt="ПВЗ Е-Кит">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="marketing-card marketing-card-aria marketing-card-xl px-1">
+              <div class=""></div>
+              <div class="py-4 px-4">
+                <h4 class="marketing-card__title">Новый склад в Москве</h4>
+
+                <p class="marketing-card__items">Уважаемые клиенты!
+                  Для Вас открыт отдельный склад Е-КИТ по адресу г. Москва, МКАД 43 км., корпус 7, ворота №16. Прием
+                  отправлений производится...</p>
+
+                <div class="marketing-card-ill py-4">
+                  <img class="" src="images/illustrations/news/warehouse_logistics.svg" alt="Склад">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="marketing-card marketing-card-aria marketing-card-xl px-1">
+              <div class=""></div>
+              <div class="py-4 px-4">
+                <h4 class="marketing-card__title">250!</h4>
+
+                <p class="marketing-card__items">Доставка заказов оформленных по тарифу KITBox категории ХS, S по единой
+                  цене – 250 руб. Независимо от города доставки, в руки клиента (до адреса)...</p>
+
+                <div class="marketing-card-ill py-4">
+                  <img class="mx-auto" src="images/illustrations/news/courier_delivery.svg" alt="Доставка">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+      </div>
+    </section>
+
+
+
+    </div>
+
+  </main>
+  <footer class="footer py-5">
+    <div class="main-container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5 class="footer__title">Полезные ссылки</h5>
+          <ul class="footer__items">
+            <li class="footer__item">Вход в личный кабинет</li>
+            <li class="footer__item">Cтать партнером ПВЗ</li>
+            <li class="footer__item">Запросить договор</li>
+            <li class="footer__item">Документы</li>
+            <li class="footer__item">Тарифы на услуги</li>
+            <li class="footer__item">География</li>
+            <li class="footer__item">Филиалы</li>
+            <li class="footer__item">Новости</li>
+
+
+          </ul>
+        </div>
+        <div class="col-md-3">
+
+          <h5 class="footer__title">Услуги</h5>
+          <ul class="footer__items">
+            <li class="footer__item">KIT Box - доставка груза в упаковке
+              отправителя </li>
+            <li class="footer__item">Доставка с наложенным платежом</li>
+            <li class="footer__item">Тариф «Покрышка»</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="footer__title">Дополнительно</h5>
+          <ul class="footer__items">
+            <li class="footer__item">Оплата</li>
+            <li class="footer__item">Политика конфиденциальности</li>
+            <li class="footer__item">Клиентское соглашение</li>
+            <li class="footer__item">Доставка заказов в страны ЕАЭС</li>
+            <li class="footer__item">Спец. условия - Калининградская
+              область</li>
+            <li class="footer__item">Файлы cookie</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="footer__title">Контакты</h5>
+          <ul class="footer__items">
+            <li class="footer__item">Телефон: 8 800 234-73-77</li>
+            <li class="footer__item">E- mail: info@e-kit.pro</li>
+          </ul>
+          <h5 class="footer__title">Адреса</h5>
+          <ul class="footer__items">
+            <li class="footer__item">г. Екатеринбург, ул. Маневровая, д. 41</li>
+            <li class="footer__item">г. Екатеринбург, пр. Космонавтов, д. 11</li>
+            <li class="footer__item">г. Екатеринбург, 8 марта ул., 269</li>
+            <a class="footer__item-link">Смотреть все адреса</a>
+
+
+          </ul>
+
+        </div>
+        <hr class="line">
+
+
+        <p class="footer__item">Современная служба доставки, которая осуществляет полный комплекс услуг, связанных с
+          транспортировкой и доставкой товаров как для юридических, так и для физических лиц</p>
+        <hr class="line">
+      </div>
+
+        <div class="row px-0">
+
+          <div class="col-md-8 px-0">
+            <p class="footer__item">© Транспортная компания E-kit 2021 все права защищены</p>
+          </div>
+          <div class="col-md-4 px-0 d-flex justify-content-between">
+            <div class="finance d-flex flex-row bd-highlight">
+              <a class="px-1 bd-highlight footer__icon" href="#"><img class="" src="images/icons/payment_sys/mastercard.svg" alt="mastercard"></a>
+              <a class="px-1 bd-highlight footer__icon" href="#"><img class="" src="images/icons/payment_sys/visa.svg" alt="visa"></a>
+              <a class="px-1 bd-highlight footer__icon" href="#"><img class="" src="images/icons/payment_sys/mir.svg" alt="mir"></a>
+              <a class="px-1 bd-highlight footer__icon" href="#"><img class="" src="images/icons/payment_sys/jsb.svg" alt="jsb"></a>
+            </div>
+            <div class="d-flex flex-row bd-highlight">
+              <a class="px-1 bd-highlight footer__icon" href="#"><img class="" src="images/icons/social/vk.svg" alt="vk"></a>
+              <a class="px-1 bd-highlight footer__icon" href="#"><img class="" src="images/icons/social/ok.svg" alt="ok"></a>
+              <a class="px-1 bd-highlight footer__icon" href="#"><img class="" src="images/icons/social/fb.svg" alt="fb"></a>
+             
+            </div>
+          </div>
+        </div>
+
+
+
+     
+
+
+
+    </div>
+
+
+
+  </footer>
+</body>
+
+</html>
