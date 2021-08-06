@@ -2,23 +2,42 @@
 background: @danger;
 border-radius: @rad;
 height: 44px;
-padding-left: 7px;
-padding-right: 8px;
-width: 176px;
+
+
+&:active {
+background: @attention;
+color: @base;
+}
+
+&:hover {
+background: @base;
+border: 1px solid @danger;
+color: @danger;
+}
+
+&:focus {
+    background: @base;
+    border: 1px solid @attention;
+    color: @attention;
+}
+
 
     &__link {
 color: @base;
 font-weight: 600;
-    }
 
-    &__phrase {
-        font-size: 14px;
-    }
+&-phrase {
+    font-size: 14px;
+    padding: 0 18px;
+}
 
 
-    &__word {
-        font-size: 16px;
+&-word {
+    font-size: 16px;
+    padding: 0 44px;
+}
     }
+   
 }
 
 

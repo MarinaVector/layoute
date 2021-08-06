@@ -34,12 +34,13 @@
 
 
 
-.marketing-card,
-.product,
-.news {
+.marketing-card  {
     &-bg {
         background-color: @block-bg;
     }
+
+
+
 
     &__title {
         font-family: @font-title;
@@ -72,11 +73,19 @@
 
     &-aria {
         background-color: @base;
-
         box-sizing: border-box;
-
         border-radius: @rad;
         width: 347px;
+
+        &:active {
+         border: @info-border; 
+         box-shadow:@info-shadow;  
+        }
+
+        &:hover {
+            border: @info-border; 
+         box-shadow:@info-hover;  
+        }
     }
 
     &-sm {
@@ -93,15 +102,11 @@
 
     &-xl {
         height: 400px;
-
-
         box-shadow: @info-shadow;
 
     }
 
-    &__img {}
-
-    &-ill {
+       &-ill {
         width: 100%;
     }
 
@@ -117,7 +122,6 @@
         font-size: 30px;
         color: @title;
     }
-
 
 }
 
@@ -142,10 +146,12 @@
         font-size: 16px;
         line-height: 20px;
         color: @default;
-
+        margin-left: 62px;
 
         &-check::before {
             content: url(images/icons/ui/check_mark.svg);
+            position: absolute;
+            left: 40px;
 
         }
     }
@@ -160,7 +166,6 @@
     }
 
     &__info {
-
         font-family: @font-primary;
         font-style: normal;
         font-weight: normal;
@@ -169,7 +174,6 @@
         color: @default;
 
     }
-
 
 
 }
