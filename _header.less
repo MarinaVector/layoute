@@ -10,8 +10,7 @@
 
 .top-nav {
     
-    
-    padding-top: 10px;
+      
 
     &__item {
         display: flex;
@@ -60,14 +59,39 @@ border-bottom: @mark-border;
 
 .navigation {
 
+    &__items {
+        margin-right: 210px;
+     }
+
     &__logo {
-        margin-right: 15px;
+       //margin-right: 15px;
     }
 
     &__txt {
-        margin-top: 20px;
+        color: @link-hover;
     }
 
+    &__txt p {
+        margin-bottom: 0!important;
+    }
+
+   
     
 
+}
+
+
+ul.arrow li:before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: inherit;
+    bottom: inherit;
+    left: 0;
+    width: 24px;
+    height: 16px;
+    background-image: url(images/icons/ui/arrow_right.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
