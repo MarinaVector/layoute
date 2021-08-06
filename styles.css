@@ -76,6 +76,9 @@
 .navigation__txt p {
   margin-bottom: 0!important;
 }
+.navigation__item:hover {
+  color: #1355A0;
+}
 ul.arrow li:before {
   content: '';
   position: absolute;
@@ -134,9 +137,15 @@ ul.arrow li:before {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   line-height: 20px;
   color: #363636;
+}
+.marketing-card__items-sm {
+  font-size: 14px;
+  line-height: 17px;
+}
+.marketing-card__items-md {
+  font-size: 16px;
 }
 .marketing-card-aria {
   background-color: #FFFFFF;
@@ -206,6 +215,9 @@ ul.arrow li:before {
   position: absolute;
   left: 40px;
 }
+.product-bg {
+  background: #F3F8FD;
+}
 .product__title {
   font-family: 'Montserrat Alternates', sans-serif;
   font-style: normal;
@@ -261,6 +273,17 @@ ul.arrow li:before {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
 }
+.acc-card__header:active {
+  border: 1px solid rgba(70, 148, 209, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+.acc-card__header:hover {
+  border: 1px solid rgba(70, 148, 209, 0.2);
+  box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.1);
+}
+.acc-card__header:hover .acc-card__title {
+  color: #4694D1;
+}
 .acc-card__title {
   font-family: 'Montserrat Alternates', sans-serif;
   font-style: normal;
@@ -312,7 +335,7 @@ ul.arrow li:before {
 }
 .footer__title:hover,
 .footer__item:hover {
-  color: #1355A0;
+  color: #1355A0 !important;
 }
 .footer__icon {
   cursor: pointer;

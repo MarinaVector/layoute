@@ -34,13 +34,10 @@
 
 
 
-.marketing-card  {
+.marketing-card {
     &-bg {
         background-color: @block-bg;
     }
-
-
-
 
     &__title {
         font-family: @font-title;
@@ -65,11 +62,20 @@
         font-family: @font-primary;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
         line-height: 20px;
         color: @default;
 
+
+        &-sm {
+            font-size:14px;
+            line-height: 17px;
+        }
+
+        &-md {
+            font-size:16px;
+        }
     }
+
 
     &-aria {
         background-color: @base;
@@ -78,13 +84,13 @@
         width: 347px;
 
         &:active {
-         border: @info-border; 
-         box-shadow:@info-shadow;  
+            border: @info-border;
+            box-shadow: @info-shadow;
         }
 
         &:hover {
-            border: @info-border; 
-         box-shadow:@info-hover;  
+            border: @info-border;
+            box-shadow: @info-hover;
         }
     }
 
@@ -106,7 +112,7 @@
 
     }
 
-       &-ill {
+    &-ill {
         width: 100%;
     }
 
@@ -157,7 +163,16 @@
     }
 }
 
+.product-bg {
+
+    background: @block-bg;
+
+}
+
 .product {
+
+
+
     &__title {
         font-family: @font-title;
         font-style: normal;
@@ -233,6 +248,20 @@
         box-shadow: @acc-shadow;
         border-radius: @rad;
 
+
+        &:active {
+    border: @mark-border;
+    box-shadow: @acc-shadow;
+        } 
+
+&:hover {
+    border: @mark-border;
+    box-shadow: @info-hover;
+
+    .acc-card__title {
+    color: @title-style;
+    }
+}
 
 
     }
