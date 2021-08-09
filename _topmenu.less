@@ -24,14 +24,14 @@
 	top: calc(50% + 5px);
 }
 
-.menu {
+.menu-sm {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	padding: 15px;
-	background-color: gray;
+	background-color: @nav;
 	transform: translateX(-100%);
 	transition: transform 0.5s; 
 }
@@ -40,7 +40,7 @@
 	transform: translateX(0);
 }
 
-.menu li {
+.menu-sm li {
 	list-style-type: none;
 }
 
