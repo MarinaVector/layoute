@@ -67,12 +67,12 @@
 
 
         &-sm {
-            font-size:14px;
+            font-size: 14px;
             line-height: 17px;
         }
 
         &-md {
-            font-size:16px;
+            font-size: 16px;
         }
     }
 
@@ -249,19 +249,26 @@
         border-radius: @rad;
 
 
-        &:active {
-    border: @mark-border;
-    box-shadow: @acc-shadow;
-        } 
+        &:active,              
+        &:focus {
+            border: @mark-border;
+            box-shadow: @acc-shadow;
 
-&:hover {
-    border: @mark-border;
-    box-shadow: @info-hover;
+            .acc-card__title:after {
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
 
-    .acc-card__title {
-    color: @title-style;
-    }
-}
+        }
+
+        &:hover {
+            border: @mark-border;
+            box-shadow: @info-hover;
+
+            .acc-card__title {
+                color: @title-style;
+            }
+        }
 
 
     }

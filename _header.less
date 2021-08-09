@@ -18,15 +18,11 @@
 
     &__items {
 
-        &:not(:first-child) {
-
-            padding-left: 1.875em;
-        }
-
+        
         &-place:before {
 
             content: url(images/icons/ui/point.svg);
-            margin-right: 2px;
+            margin-right: 4px;
             //display: inline-block;
             vertical-align: middle;
 
@@ -79,6 +75,29 @@ border-bottom: @mark-border;
         &:hover {
            color: @link-hover; 
         }
+
+      
+        &-placehold::-webkit-input-placeholder,
+        &-placehold::-moz-placeholder,
+        &-placehold:-moz-placeholder,
+        &-placehold:-ms-input-placeholder
+          {
+            text-indent: 0px;  
+             transition: text-indent 0.3s ease;
+        }
+
+        &-placehol:hover {
+            color: @link-hover; 
+        }
+
+        &-placehold:focus::-webkit-input-placeholder,
+        &-placehold::-moz-placeholder,
+        &-placehold:-moz-placeholder,
+        &-placehold:-ms-input-placeholder {
+            text-indent: 500px; transition: text-indent 0.3s ease;
+        }
+
+
      }
     
 

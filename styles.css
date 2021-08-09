@@ -45,12 +45,9 @@
 .top-nav__item {
   display: flex;
 }
-.top-nav__items:not(:first-child) {
-  padding-left: 1.875em;
-}
 .top-nav__items-place:before {
   content: url(images/icons/ui/point.svg);
-  margin-right: 2px;
+  margin-right: 4px;
   vertical-align: middle;
 }
 .top-nav__items-arrow:after {
@@ -78,6 +75,23 @@
 }
 .navigation__item:hover {
   color: #1355A0;
+}
+.navigation__item-placehold::-webkit-input-placeholder,
+.navigation__item-placehold::-moz-placeholder,
+.navigation__item-placehold:-moz-placeholder,
+.navigation__item-placehold:-ms-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.3s ease;
+}
+.navigation__item-placehol:hover {
+  color: #1355A0;
+}
+.navigation__item-placehold:focus::-webkit-input-placeholder,
+.navigation__item-placehold::-moz-placeholder,
+.navigation__item-placehold:-moz-placeholder,
+.navigation__item-placehold:-ms-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 0.3s ease;
 }
 ul.arrow li:before {
   content: '';
@@ -273,9 +287,15 @@ ul.arrow li:before {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
 }
-.acc-card__header:active {
+.acc-card__header:active,
+.acc-card__header:focus {
   border: 1px solid rgba(70, 148, 209, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+.acc-card__header:active .acc-card__title:after,
+.acc-card__header:focus .acc-card__title:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .acc-card__header:hover {
   border: 1px solid rgba(70, 148, 209, 0.2);
@@ -404,11 +424,32 @@ textarea:focus {
   outline: none;
 }
 .main-container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
+  min-width: 330px;
+  width: auto;
 }
 .navbar {
   padding: 0 !important;
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 992px) {
+  .delivery__info {
+    font-size: 14px;
+  }
+  .customer-card__title {
+    font-size: 20px;
+  }
+  .acc-card__title {
+    font-size: 18px;
+  }
+  .include__info {
+    padding-left: 0;
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 992px) and (max-width: 460px) {
+  .acc-card__title {
+    font-size: 16px;
+  }
 }
